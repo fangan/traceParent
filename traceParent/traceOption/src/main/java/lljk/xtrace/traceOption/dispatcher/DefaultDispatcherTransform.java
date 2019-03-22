@@ -22,18 +22,12 @@ public class DefaultDispatcherTransform implements DispatcherTransform{
         try {
             PropertiesFactory propertiesFactory = new PropertiesFactory();
             Properties properties = propertiesFactory.getProperties(PropertiesFileEnum.CLASSVISITOR);
-
             String classVisitorClassName = properties.getProperty(className);
-
             ClassReader cr = new ClassReader(classfileBuffer);
-
             ClassWriter cw = new ClassWriter(cr, ClassWriter.COMPUTE_MAXS);
-
             Class classVisitor =  this.getClass().getClassLoader().loadClass(classVisitorClassName);
-
             Constructor<?> cons = classVisitor.getConstructor(ClassVisitor.class);
             ClassVisitor findClassVisitor = (ClassVisitor)cons.newInstance(cw);
-
             cr.accept(findClassVisitor,0);
             return cw.toByteArray();
         }catch (Exception e){

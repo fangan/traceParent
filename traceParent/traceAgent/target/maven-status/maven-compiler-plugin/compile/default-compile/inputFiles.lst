@@ -1,10 +1,6 @@
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/classVisitor/ClassVisitorDelegate.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/TracePremain.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/AgentTransformerWatch.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/classVisitor/DefaultClassVisitorDelegate.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/Testb.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/classVisitor/TraceClassVisitor.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/AgentStart.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/classVisitor/AgentLoader.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/TraceClassFileTransformer.java
-/Users/fangan/code/traceParent/traceAgent/src/main/java/Test.java
+/Users/fangan/github/traceParent/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/TraceClassFileTransformer.java
+/Users/fangan/github/traceParent/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/TracePremain.java
+/Users/fangan/github/traceParent/traceParent/traceAgent/src/main/java/Test.java
+/Users/fangan/github/traceParent/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/Testb.java
+/Users/fangan/github/traceParent/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/AgentTransformerWatch.java
+/Users/fangan/github/traceParent/traceParent/traceAgent/src/main/java/lljk/xtrace/boot/AgentStart.java
