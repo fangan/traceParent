@@ -3,7 +3,8 @@ package lljk.xtrace.boot;
 
 import lljk.xtrace.traceOption.agentClssProfile.AgentJarClass;
 import lljk.xtrace.traceOption.agentClssProfile.DefaultAgentJarClass;
-import lljk.xtrace.traceOption.agentPath.AgentPath;
+import lljk.xtrace.traceOption.param.AgentParam;
+import lljk.xtrace.traceOption.param.AgentJvmParam;
 import lljk.xtrace.traceOption.loader.DefaultTraceClassLoader;
 
 import java.lang.instrument.ClassFileTransformer;
@@ -18,13 +19,10 @@ import java.net.URL;
 public class TracePremain {
 
     public static void premain(String agentArgs, Instrumentation inst){
-        AgentPath agentPath = new AgentPath();
-        URL url = agentPath.getAgentUrl();
+        AgentParam agentParam = new AgentParam();
         AgentJarClass agentJarClass = new DefaultAgentJarClass();
-        ClassLoader classLoader = new DefaultTraceClassLoader(new URL[]{url},TracePremain.class.getClassLoader(),agentJarClass);
-
-        ClassFileTransformer trans =  new TraceClassFileTransformer(classLoader);
-
+        ClassLoader agentClassLoader = new DefaultTraceClassLoader(agentParam.getAgentUrls(),TracePremain.class.getClassLoader(),agentJarClass);
+        ClassFileTransformer trans =  new TraceClassFileTransformer(agentClassLoader);
         inst.addTransformer(trans);
     }
 

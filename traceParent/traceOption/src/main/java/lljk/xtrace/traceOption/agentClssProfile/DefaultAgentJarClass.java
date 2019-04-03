@@ -8,8 +8,6 @@ import lljk.xtrace.traceOption.constant.AgentUsedClassProfile;
  * @Author fangan
  **/
 public class DefaultAgentJarClass implements AgentJarClass{
-    private boolean IS_LOAD_CLASS = true;
-    private boolean NOT_LOAD_CLASS = false;
 
 
     private static DefaultAgentJarClass agentJarClass;

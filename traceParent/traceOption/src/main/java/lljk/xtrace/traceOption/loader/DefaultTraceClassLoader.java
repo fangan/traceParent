@@ -2,6 +2,7 @@ package lljk.xtrace.traceOption.loader;
 
 
 import lljk.xtrace.traceOption.agentClssProfile.AgentJarClass;
+import lljk.xtrace.traceOption.param.AgentParam;
 
 import java.net.URL;
 import java.net.URLClassLoader;
@@ -18,9 +19,8 @@ public class DefaultTraceClassLoader extends URLClassLoader {
     private final AgentJarClass agentJarClass;
     private final ClassLoader parent;
 
-    public DefaultTraceClassLoader(URL[] urls, ClassLoader parent,AgentJarClass agentJarClass) {
+    public DefaultTraceClassLoader(URL[] urls, ClassLoader parent, AgentJarClass agentJarClass) {
         super(urls,parent);
-
         this.agentJarClass=agentJarClass;
         this.parent=parent;
 

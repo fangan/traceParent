@@ -12,8 +12,12 @@ import java.util.Map;
  **/
 public class DubboConsumerBeforeInteceptor {
     public static void before(Object param){
+
         System.out.println("before");
         Invocation invocation = (Invocation) param;
+        Class clazz = invocation.getInvoker().getInterface();
+        String interfaceName = clazz.getName();
+
         Object[] argument = invocation.getArguments();
         Class<?>[] parameterType = invocation.getParameterTypes();
         Map<String, String> attachment =  invocation.getAttachments();

@@ -8,6 +8,10 @@ package lljk.xtrace.traceContext;
 public class TraceContext {
     private String traceId;
 
+    private String appName;
+
+    private String prop;
+
     private Long time;
 
     public String getTraceId() {
