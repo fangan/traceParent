@@ -20,7 +20,7 @@ public class DubboConsumerMethodVisitor extends MethodVisitor {
     }
 
     //AbstractClusterInvoker
-    //AbstractProxyInvoker
+    //AbstractProxyInvoker a
 
     @Override
     public void visitCode() {
