@@ -2,6 +2,9 @@ package lljk.xtrace.dubboSupport.inteceptor;
 
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.dubbo.rpc.Invocation;
+import lljk.xtrace.traceContext.ThreadTraceContext;
+import lljk.xtrace.traceContext.TraceContext;
+import lljk.xtrace.traceContext.TraceMap;
 
 import java.util.Map;
 
@@ -12,23 +15,18 @@ import java.util.Map;
  **/
 public class DubboConsumerBeforeInteceptor {
     public static void before(Object param){
-
-        System.out.println("before");
+        TraceContext t = ThreadTraceContext.getThreadTraceContext();
         Invocation invocation = (Invocation) param;
-        Class clazz = invocation.getInvoker().getInterface();
-        String interfaceName = clazz.getName();
+        Map<String, String> attachment =  invocation.getAttachments();
+        attachment.put("lljkTraceId",t.getTraceId());
 
         Object[] argument = invocation.getArguments();
         Class<?>[] parameterType = invocation.getParameterTypes();
-        Map<String, String> attachment =  invocation.getAttachments();
+        Class clazz = invocation.getInvoker().getInterface();
+        String interfaceName = clazz.getName();
         String methodName = invocation.getMethodName();
-        //Class anInterface = invocation.getInvoker().getInterface();
-        System.out.println(JSONObject.toJSON(argument));
-        for(Class p:parameterType){
-            System.out.println(p);
-        }
-        System.out.println(JSONObject.toJSON(attachment));
-        System.out.println(JSONObject.toJSON(methodName));
+
+
 
 
 

@@ -40,10 +40,12 @@ public class AgentTransformerWatch {
 
     public byte[] onStart(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer,ClassLoader agentLoader){
         try {
-            Class clazz =  agentLoader.loadClass("lljk.xtrace.boot.AgentStart");
-            Object o = clazz.newInstance();
-            Method method = clazz.getMethod("transform",ClassLoader.class, String.class, Class.class, ProtectionDomain.class, byte[].class ,ClassLoader.class);
-            return (byte[])method.invoke(o,loader,className,classBeingRedefined,protectionDomain,classfileBuffer,agentLoader);
+            AgentStart agentStart = new AgentStart();
+            return agentStart.transform(loader,className,classBeingRedefined,protectionDomain,classfileBuffer,agentLoader);
+//            Class clazz =  agentLoader.loadClass("lljk.xtrace.boot.AgentStart");
+//            Object o = clazz.newInstance();
+//            Method method = clazz.getMethod("transform",ClassLoader.class, String.class, Class.class, ProtectionDomain.class, byte[].class ,ClassLoader.class);
+//            return (byte[])method.invoke(o,loader,className,classBeingRedefined,protectionDomain,classfileBuffer,agentLoader);
         } catch (Exception e) {
             e.printStackTrace();
         }

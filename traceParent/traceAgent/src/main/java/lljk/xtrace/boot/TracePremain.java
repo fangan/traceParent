@@ -9,7 +9,9 @@ import lljk.xtrace.traceOption.loader.DefaultTraceClassLoader;
 
 import java.lang.instrument.ClassFileTransformer;
 import java.lang.instrument.Instrumentation;
+import java.lang.reflect.Method;
 import java.net.URL;
+import java.security.ProtectionDomain;
 
 /**
  * @Description TODO
@@ -22,8 +24,16 @@ public class TracePremain {
         AgentParam agentParam = new AgentParam();
         AgentJarClass agentJarClass = new DefaultAgentJarClass();
         ClassLoader agentClassLoader = new DefaultTraceClassLoader(agentParam.getAgentUrls(),TracePremain.class.getClassLoader(),agentJarClass);
-        ClassFileTransformer trans =  new TraceClassFileTransformer(agentClassLoader);
-        inst.addTransformer(trans);
+        try {
+          Class  clazz =   agentClassLoader.loadClass("lljk.xtrace.boot.AgentSetup");
+          Object o =   clazz.newInstance();
+          Method method = clazz.getMethod("setup",Instrumentation.class);
+          method.invoke(o,inst);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 }

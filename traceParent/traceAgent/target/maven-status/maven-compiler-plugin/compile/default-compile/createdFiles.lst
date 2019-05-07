@@ -5,5 +5,6 @@ lljk/xtrace/boot/AgentTransformerWatch.class
 lljk/xtrace/boot/AgentStart.class
 Test$3.class
 Test.class
+lljk/xtrace/boot/AgentSetup.class
 Test$1.class
 lljk/xtrace/boot/TraceClassFileTransformer.class

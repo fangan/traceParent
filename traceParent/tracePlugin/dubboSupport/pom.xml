@@ -33,6 +33,18 @@
             <artifactId>fastjson</artifactId>
             <version>${alibaba.fastjson}</version>
         </dependency>
+        <dependency>
+            <groupId>com.trace</groupId>
+            <artifactId>traceContext</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.trace</groupId>
+            <artifactId>traceContext</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 

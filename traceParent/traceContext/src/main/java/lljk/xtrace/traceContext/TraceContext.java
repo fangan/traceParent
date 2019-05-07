@@ -29,4 +29,20 @@ public class TraceContext {
     public void setTime(Long time) {
         this.time = time;
     }
+
+    public String getAppName() {
+        return appName;
+    }
+
+    public void setAppName(String appName) {
+        this.appName = appName;
+    }
+
+    public String getProp() {
+        return prop;
+    }
+
+    public void setProp(String prop) {
+        this.prop = prop;
+    }
 }
