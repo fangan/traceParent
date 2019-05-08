@@ -6,25 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="7968893e-023e-4002-b3e9-4e0cc9bdf857" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceAgent/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/traceAgent/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceAgent/target/original-traceAgent-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/traceAgent/target/original-traceAgent-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceAgent/target/traceAgent-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/traceAgent/target/traceAgent-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/src/main/java/lljk/xtrace/traceContext/TraceContextHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/src/main/java/lljk/xtrace/traceContext/TraceContextHandle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/TraceContextHandle$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/TraceContextHandle$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/TraceContextHandle.class" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/TraceContextHandle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/target/traceContext-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/target/traceContext-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceFlush/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/traceFlush/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceFlush/target/traceFlush-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/traceFlush/target/traceFlush-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/traceOption/src/main/java/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceOption/src/main/java/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.class" beforeDir="false" afterPath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceOption/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/traceOption/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceOption/target/traceOption-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/traceOption/target/traceOption-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracePlugin/dubboSupport/target/dubboSupport-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/tracePlugin/dubboSupport/target/dubboSupport-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracePlugin/dubboSupport/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/tracePlugin/dubboSupport/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceUtil/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/traceUtil/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceUtil/target/traceUtil-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/traceUtil/target/traceUtil-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/agentClssProfile/AgentJarClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/agentClssProfile/DefaultAgentJarClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/constant/AgentDelegateClassProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/constant/AgentUsedClassProfile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/dispatcher/DispatcherTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/loader/DefaultTraceClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/match/ClassFileTransformMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/match/ClassFileTransformMatchFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/match/DefaultClassFileTransformMatch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/param/AgentJvmParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/param/AgentParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/param/AgentParamPattern.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/classes/lljk/xtrace/traceOption/transform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceOption/target/traceOption-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tracePlugin/target/" />
     <ignored path="$PROJECT_DIR$/traceOption/target/" />
@@ -106,17 +104,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traceOption/src/main/java/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/System.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1826">
-              <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
+            <state relative-caret-position="154">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -124,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceAgent/src/main/java/lljk/xtrace/boot/TracePremain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="216">
+              <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -381,12 +370,12 @@
       <workItem from="1554722012806" duration="683000" />
       <workItem from="1556073206632" duration="977000" />
       <workItem from="1557053533693" duration="13049000" />
-      <workItem from="1557295072919" duration="603000" />
+      <workItem from="1557295072919" duration="1301000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24430000" />
+    <option name="totallyTimeSpent" value="25128000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -401,6 +390,39 @@
     <frame x="0" y="56" width="1421" height="772" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27121103" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49963742" weight="0.28235295" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4985294" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003626" side_tool="true" weight="0.32941177" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" order="12" />
+      <window_info anchor="bottom" id="Spring" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32994923" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27121103" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
@@ -418,7 +440,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4735294" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4985294" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003626" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="12" />
@@ -432,39 +454,6 @@
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32994923" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26758522" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Alibaba Cloud Explorer" order="7" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49963742" visible="true" weight="0.28235295" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32941177" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5117647" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5003626" side_tool="true" weight="0.32941177" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32941177" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" order="13" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.32994923" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -755,20 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1826">
-          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/traceAgent/src/main/java/lljk/xtrace/boot/TracePremain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2090">
@@ -810,10 +785,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="123" column="36" selection-start-line="123" selection-start-column="36" selection-end-line="123" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceAgent/src/main/java/lljk/xtrace/boot/TracePremain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="28" column="30" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/traceOption/src/main/java/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="154">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
