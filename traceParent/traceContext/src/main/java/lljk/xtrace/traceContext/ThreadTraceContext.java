@@ -14,12 +14,14 @@ public class ThreadTraceContext {
     public static TraceContext getThreadTraceContext(){
 
         if(TraceMap.contextMap.get(Thread.currentThread()) != null){
+            TraceMap.contextMap.get(Thread.currentThread()).setStep(TraceMap.contextMap.get(Thread.currentThread()).getStep()+1);
             return TraceMap.contextMap.get(Thread.currentThread());
         }else{
             TraceContext traceContext = new TraceContext();
             traceContext.setTraceId(UUID.randomUUID().toString());
             traceContext.setAppName(AgentJvmParam.appName);
             traceContext.setTime(System.currentTimeMillis());
+            traceContext.setStep(1);
             TraceMap.contextMap.put(Thread.currentThread(),traceContext);
             return traceContext;
         }

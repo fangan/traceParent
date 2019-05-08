@@ -14,6 +14,8 @@ public class TraceContext {
 
     private Long time;
 
+    private Integer step;
+
     public String getTraceId() {
         return traceId;
     }
@@ -44,5 +46,13 @@ public class TraceContext {
 
     public void setProp(String prop) {
         this.prop = prop;
+    }
+
+    public Integer getStep() {
+        return step;
+    }
+
+    public void setStep(Integer step) {
+        this.step = step;
     }
 }
