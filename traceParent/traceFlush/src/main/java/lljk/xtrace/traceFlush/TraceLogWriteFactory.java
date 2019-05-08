@@ -7,9 +7,11 @@ package lljk.xtrace.traceFlush;
  **/
 public class TraceLogWriteFactory {
 
+    private static TraceLogWrite defaultTraceLogWrite = new DefaultTraceLogWrite();
+
     public static TraceLogWrite getTraceWrite(String name){
         if(TraceWriteName.defaultWrite.name().equals(name)){
-            return DefaultTraceLogWrite.getTraceWrite();
+            return defaultTraceLogWrite;
         }
         return null;
     }

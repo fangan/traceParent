@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7968893e-023e-4002-b3e9-4e0cc9bdf857" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/DefaultTraceLogWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceWriteName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceLogTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/dubbo/DubboLogParamTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/src/main/java/lljk/xtrace/traceContext/ThreadTraceContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/src/main/java/lljk/xtrace/traceContext/ThreadTraceContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/src/main/java/lljk/xtrace/traceContext/TraceContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/src/main/java/lljk/xtrace/traceContext/TraceContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/ThreadTraceContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/ThreadTraceContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/TraceContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/traceContext/target/classes/lljk/xtrace/traceContext/TraceContext.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/traceFlush/target/classes/lljk/xtrace/traceFlush/TraceLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/traceFlush/target/classes/lljk/xtrace/traceFlush/TraceLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracePlugin/dubboSupport/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tracePlugin/dubboSupport/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracePlugin/dubboSupport/src/main/java/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/tracePlugin/dubboSupport/src/main/java/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tracePlugin/dubboSupport/target/classes/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/tracePlugin/dubboSupport/target/classes/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/DefaultTraceLogWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/DefaultTraceLogWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/tracePlugin/target/" />
     <ignored path="$PROJECT_DIR$/traceOption/target/" />
@@ -67,13 +52,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="2645" />
+          <entry key="java" value="2697" />
           <entry key="xml" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2645" />
+          <entry key="JAVA" value="2697" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="14" />
         </counts>
@@ -91,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tracePlugin/dubboSupport/src/main/java/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="-327">
+              <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#856#872#0" expanded="true" />
@@ -107,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceWriteName.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="242">
+              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -116,17 +101,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWrite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            <state relative-caret-position="88">
+              <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+            <state relative-caret-position="153">
+              <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -134,8 +119,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/DefaultTraceLogWrite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="134">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -143,7 +128,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
+            <state relative-caret-position="682">
               <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
               <folding>
                 <element signature="e#318#319#0" expanded="true" />
@@ -178,8 +163,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceLogTypeEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="148">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -243,11 +228,11 @@
         <option value="$PROJECT_DIR$/tracePlugin/dubboSupport/src/main/java/lljk/xtrace/dubboSupport/logType/DubboLogParamTypeEnum.java" />
         <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceLogTypeEnum.java" />
         <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/dubbo/DubboLogParamTypeEnum.java" />
-        <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/DefaultTraceLogWrite.java" />
         <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceWriteSelector.java" />
         <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceWriteName.java" />
-        <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java" />
         <option value="$PROJECT_DIR$/tracePlugin/dubboSupport/src/main/java/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.java" />
+        <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/DefaultTraceLogWrite.java" />
+        <option value="$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java" />
       </list>
     </option>
   </component>
@@ -285,76 +270,6 @@
             <path>
               <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
               <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceAgent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceAgent" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="boot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceContext" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceContext" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceContext" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceContext" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceContext" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="traceContext" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
               <item name="traceFlush" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -386,16 +301,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="traceFlush" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="traceFlush" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="traceFlush" type="462c0819:PsiDirectoryNode" />
-              <item name="logType" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
@@ -419,57 +324,6 @@
               <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
               <item name="traceParent" type="462c0819:PsiDirectoryNode" />
               <item name="tracePlugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="tracePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="tracePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="tracePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="tracePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="tracePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="traceParent" type="462c0819:PsiDirectoryNode" />
-              <item name="tracePlugin" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dubboSupport" type="462c0819:PsiDirectoryNode" />
-              <item name="inteceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="traceParent" type="b2602c69:ProjectViewProjectNode" />
@@ -485,7 +339,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557315950089" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557316609603" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -596,12 +450,12 @@
       <workItem from="1554722012806" duration="683000" />
       <workItem from="1556073206632" duration="977000" />
       <workItem from="1557053533693" duration="13049000" />
-      <workItem from="1557295072919" duration="4266000" />
+      <workItem from="1557295072919" duration="4898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28093000" />
+    <option name="totallyTimeSpent" value="28725000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -626,14 +480,14 @@
       <window_info id="Alibaba Cloud Explorer" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49963742" visible="true" weight="0.28235295" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49963742" weight="0.28235295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.16470589" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34558824" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003626" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Alibaba Cloud View" order="12" />
@@ -996,13 +850,6 @@
     <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/package-info.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceLogTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -1010,9 +857,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/traceAgent/src/main/java/lljk/xtrace/boot/AgentTransformerWatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="29" column="13" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/dubbo/DubboLogParamTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceWriteSelector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceLogTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tracePlugin/dubboSupport/src/main/java/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-327">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#856#872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="682">
           <caret line="60" column="5" lean-forward="true" selection-start-line="60" selection-start-column="5" selection-end-line="60" selection-end-column="5" />
           <folding>
             <element signature="e#318#319#0" expanded="true" />
@@ -1045,61 +931,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWrite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/traceAgent/src/main/java/lljk/xtrace/boot/AgentTransformerWatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="13" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/dubbo/DubboLogParamTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/logType/TraceWriteSelector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="88">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceWriteName.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+        <state relative-caret-position="242">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/DefaultTraceLogWrite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="134">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tracePlugin/dubboSupport/src/main/java/lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.java">
+    <entry file="file://$PROJECT_DIR$/traceFlush/src/main/java/lljk/xtrace/traceFlush/TraceLogWriteFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#856#872#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
