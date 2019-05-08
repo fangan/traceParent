@@ -5,6 +5,8 @@ import lljk.xtrace.traceUtil.propertiesUtil.PropertiesFileEnum;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.ClassWriter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Constructor;
 import java.security.ProtectionDomain;
@@ -16,6 +18,8 @@ import java.util.Properties;
  * @Author fangan
  **/
 public class DefaultDispatcherTransform implements DispatcherTransform{
+
+    //private static final Logger log = LoggerFactory.getLogger(DefaultDispatcherTransform.class);
 
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer, ClassLoader agentClassLoader) {
         byte[] originByte = classfileBuffer;
@@ -31,8 +35,10 @@ public class DefaultDispatcherTransform implements DispatcherTransform{
             cr.accept(findClassVisitor,0);
             return cw.toByteArray();
         }catch (Exception e){
+            System.err.print("DefaultDispatcherTransform#transform异常"+e.getMessage());
             return originByte;
         }
 
     }
+
 }
