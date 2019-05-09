@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/traceAgent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/traceContext" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/traceFlush" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/traceOption" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tracePlugin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tracePlugin/dubboSupport" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/traceUtil" charset="UTF-8" />
+  </component>
+</project>
