@@ -18,6 +18,7 @@ public class AgentUsedClassProfile {
                 "lljk.xtrace",
                 "com.alibaba.fastjson",
                 "org.objectweb.asm",
+                "org.apache.kafka",
 
                 "org.jboss.netty",
 
