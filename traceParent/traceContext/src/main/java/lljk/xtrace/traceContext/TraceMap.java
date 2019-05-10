@@ -9,5 +9,5 @@ import java.util.Map;
  * @Author fangan
  **/
 public class TraceMap {
-    public static Map<Thread,TraceContext> contextMap = new HashMap();
+    public static ThreadLocal<TraceContext> contextMap = new ThreadLocal();
 }

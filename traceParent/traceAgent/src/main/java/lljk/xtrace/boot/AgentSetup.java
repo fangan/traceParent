@@ -12,7 +12,6 @@ import java.lang.instrument.Instrumentation;
  **/
 public class AgentSetup {
     public void setup(Instrumentation instrumentation){
-        TraceContextHandle.handle();
 
         ClassFileTransformer trans =  new TraceClassFileTransformer(this.getClass().getClassLoader());
         instrumentation.addTransformer(trans);
