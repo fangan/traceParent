@@ -9,5 +9,6 @@
     <file url="file://$PROJECT_DIR$/tracePlugin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tracePlugin/dubboSupport" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/traceUtil" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/traceWeb" charset="UTF-8" />
   </component>
 </project>

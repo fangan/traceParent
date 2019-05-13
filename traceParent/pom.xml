@@ -20,6 +20,7 @@
         <module>traceUtil</module>
         <module>traceFlush</module>
         <module>traceOption</module>
+        <module>traceWeb</module>
     </modules>
 
 

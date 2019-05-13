@@ -20,7 +20,10 @@ import java.util.Map;
  **/
 public class DubboConsumerBeforeInteceptor {
     public static void before(Object param){
+        Long currentTime = System.currentTimeMillis();
+
         TraceContext t = ThreadTraceContext.getThreadTraceContext();
+        t.setTime(System.currentTimeMillis());
         Invocation invocation = (Invocation) param;
         Map<String, String> attachment =  invocation.getAttachments();
         attachment.put("lljkTraceId",t.getTraceId());
@@ -43,6 +46,9 @@ public class DubboConsumerBeforeInteceptor {
         traceLog.setAppName(t.getAppName());
         traceLog.setTraceId(t.getTraceId());
         traceLog.setParam(map);
+        Long spendTime = currentTime - t.getTime();
+        traceLog.setTime(spendTime);
+        t.setTime(currentTime);
 
         TraceLogWrite traceLogWrite = TraceLogWriteFactory.getTraceWrite(TraceWriteName.defaultWrite.name());
         traceLogWrite.write(traceLog);
