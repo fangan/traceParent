@@ -12,16 +12,7 @@ public class TestTraceContext {
         for(int i=0;i<10;i++){
             Thread t= new Thread(new Runnable() {
                 public void run() {
-                    TraceContext traceContext = ThreadTraceContext.getThreadTraceContext();
-                    System.out.println(traceContext.getTraceId());
-                    System.out.println(traceContext.getAppName());
-                    System.out.println(traceContext.getProp());
-                    System.out.println(traceContext.getTime());
-                    try {
-                        Thread.sleep(500000);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
+
                 }
             });
             t.start();
@@ -31,15 +22,9 @@ public class TestTraceContext {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        Map<Thread,TraceContext> m = TraceMap.contextMap;
-
-        for(Map.Entry entry : m.entrySet()){
-          Thread ta =  (Thread)entry.getKey();
-          TraceContext context =  (TraceContext) entry.getValue();
-            System.out.println(ta.isAlive());
+        ThreadLocal<TraceContext> m = TraceMap.contextMap;
 
 
-        }
 
         System.out.println(m);
     }
