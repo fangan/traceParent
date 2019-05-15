@@ -15,7 +15,7 @@ public class AgentDelegateClassProfile {
 
         String[] lib = new String[] {
                 "com/alibaba/dubbo/rpc/cluster/support/AbstractClusterInvoker",
-
+                "com/alibaba/dubbo/rpc/proxy/AbstractProxyInvoker",
 
         };
 
