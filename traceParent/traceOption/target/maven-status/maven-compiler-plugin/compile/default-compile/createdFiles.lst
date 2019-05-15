@@ -6,6 +6,7 @@ lljk/xtrace/traceOption/constant/AgentDelegateClassProfile.class
 lljk/xtrace/traceOption/match/DefaultClassFileTransformMatch.class
 lljk/xtrace/traceOption/match/ClassFileTransformMatchFactory.class
 lljk/xtrace/traceOption/param/AgentParam.class
+lljk/xtrace/traceOption/constant/AsmVersion.class
 lljk/xtrace/traceOption/dispatcher/DispatcherTransform.class
 lljk/xtrace/traceOption/constant/AgentUsedClassProfile.class
 lljk/xtrace/traceOption/param/AgentParamPattern.class

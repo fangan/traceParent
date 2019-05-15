@@ -1,5 +1,6 @@
 package lljk.xtrace.dubboSupport;
 
+import lljk.xtrace.traceOption.constant.AsmVersion;
 import org.objectweb.asm.ClassVisitor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -13,7 +14,7 @@ public class DubboProviderClassVisitor extends ClassVisitor{
 
 
     public DubboProviderClassVisitor(ClassVisitor cv) {
-        super(Opcodes.ASM7, cv);
+        super(AsmVersion.ASM_VERSION, cv);
     }
 
     public DubboProviderClassVisitor(int i, ClassVisitor classVisitor) {
