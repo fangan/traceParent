@@ -9,6 +9,7 @@ lljk/xtrace/traceOption/param/AgentParam.class
 lljk/xtrace/traceOption/dispatcher/DispatcherTransform.class
 lljk/xtrace/traceOption/constant/AgentUsedClassProfile.class
 lljk/xtrace/traceOption/param/AgentParamPattern.class
+lljk/xtrace/traceOption/constant/TraceIdProfile.class
 lljk/xtrace/traceOption/loader/DefaultTraceClassLoader.class
 lljk/xtrace/traceOption/agentClssProfile/DefaultAgentJarClass.class
 lljk/xtrace/traceOption/agentClssProfile/AgentJarClass.class

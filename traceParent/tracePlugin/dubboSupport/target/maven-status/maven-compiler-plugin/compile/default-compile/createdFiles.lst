@@ -3,6 +3,7 @@ lljk/xtrace/dubboSupport/inteceptor/DubboProviderBeforeInteceptor.class
 lljk/xtrace/dubboSupport/DubboConsumerMethodVisitor.class
 lljk/xtrace/dubboSupport/inteceptor/DubboConsumerBeforeInteceptor.class
 lljk/xtrace/dubboSupport/inteceptor/DubboProviderAfterInteceptor.class
+lljk/xtrace/dubboSupport/DubboProviderClassVisitor.class
 Test.class
 lljk/xtrace/dubboSupport/inteceptor/DubboConsumerAfterInteceptor.class
 lljk/xtrace/dubboSupport/DubboConsumerClassVisitor.class

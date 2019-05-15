@@ -27,4 +27,16 @@ public class ThreadTraceContext {
         }
     }
 
+
+    public static TraceContext generateThreadTraceContext(String traceId){
+            TraceContext traceContext = new TraceContext();
+            traceContext.setTraceId(traceId);
+            traceContext.setAppName(AgentJvmParam.appName);
+            traceContext.setTime(System.currentTimeMillis());
+            traceContext.setStep(1);
+            TraceMap.contextMap.set(traceContext);
+            return traceContext;
+
+    }
+
 }

@@ -6,6 +6,7 @@
 /Users/fangan/github/traceParent/traceParent/traceOption/src/main/java/lljk/xtrace/traceOption/constant/AgentDelegateClassProfile.java
 /Users/fangan/github/traceParent/traceParent/traceOption/src/main/java/lljk/xtrace/traceOption/constant/AgentUsedClassProfile.java
 /Users/fangan/github/traceParent/traceParent/traceOption/src/main/java/lljk/xtrace/traceOption/dispatcher/DefaultDispatcherTransform.java
+/Users/fangan/github/traceParent/traceParent/traceOption/src/main/java/lljk/xtrace/traceOption/constant/TraceIdProfile.java
 /Users/fangan/github/traceParent/traceParent/traceOption/src/main/java/lljk/xtrace/traceOption/match/ClassFileTransformMatch.java
 /Users/fangan/github/traceParent/traceParent/traceOption/src/main/java/lljk/xtrace/traceOption/match/DefaultClassFileTransformMatch.java
 /Users/fangan/github/traceParent/traceParent/traceOption/src/main/java/lljk/xtrace/traceOption/match/ClassFileTransformMatchFactory.java

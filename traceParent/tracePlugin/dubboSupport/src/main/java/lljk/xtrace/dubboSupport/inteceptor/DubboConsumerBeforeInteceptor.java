@@ -9,6 +9,7 @@ import lljk.xtrace.traceFlush.TraceLogWriteFactory;
 import lljk.xtrace.traceFlush.TraceWriteName;
 import lljk.xtrace.traceFlush.logType.TraceLogTypeEnum;
 import lljk.xtrace.traceFlush.logType.dubbo.DubboLogParamTypeEnum;
+import lljk.xtrace.traceOption.constant.TraceIdProfile;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -26,7 +27,7 @@ public class DubboConsumerBeforeInteceptor {
         t.setTime(System.currentTimeMillis());
         Invocation invocation = (Invocation) param;
         Map<String, String> attachment =  invocation.getAttachments();
-        attachment.put("lljkTraceId",t.getTraceId());
+        attachment.put(TraceIdProfile.traceIdName,t.getTraceId());
 
         Map<String,Object> map = new HashMap<String, Object>();
 

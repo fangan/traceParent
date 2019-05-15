@@ -1,5 +1,7 @@
 package lljk.xtrace.dubboSupport;
 
+import lljk.xtrace.dubboSupport.inteceptor.DubboConsumerBeforeInteceptor;
+import lljk.xtrace.dubboSupport.inteceptor.DubboProviderBeforeInteceptor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
 
@@ -24,28 +26,14 @@ public class DubboProviderMethodVisitor extends MethodVisitor {
     @Override
     public void visitCode() {
 
+        mv.visitVarInsn(Opcodes.ALOAD,1);
+        mv.visitMethodInsn(INVOKESTATIC, DubboProviderBeforeInteceptor.class.getName().replace(".","/"),"before","(Ljava/lang/Object;)V",false);
 
-
-
-//        mv.visitVarInsn(Opcodes.ALOAD,0);
-//        mv.visitFieldInsn(GETFIELD, "com/mysql/jdbc/PreparedStatement", "originalSql", "Ljava/lang/String;");
-//        mv.visitMethodInsn(INVOKESTATIC, Paratest.class.getName().replace(".","/"),"say","(Ljava/lang/String;)V",false);
-//
-//
-//        mv.visitMethodInsn(INVOKESTATIC, LanjieTest.class.getName().replace(".","/"),"beforeMethod","()V",false);
         super.visitCode();
     }
 
     @Override
     public void visitInsn(int opcode) {
-//        if(opcode == LRETURN ||
-//                opcode == DRETURN ||
-//                opcode == FRETURN ||
-//                opcode == IRETURN ||
-//                opcode == ARETURN ||
-//                opcode == RETURN ) {
-//            mv.visitMethodInsn(INVOKESTATIC, LanjieTest.class.getName().replace(".","/"),"afterMethod","()V",false);
-//        }
         super.visitInsn(opcode);
     }
 }
