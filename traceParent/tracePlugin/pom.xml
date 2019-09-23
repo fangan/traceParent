@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>dubboSupport</module>
+        <module>mysqlJdbc</module>
     </modules>
 
 

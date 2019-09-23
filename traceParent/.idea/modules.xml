@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/tracePlugin/mysqlJdbc/mysqlJdbc.iml" filepath="$PROJECT_DIR$/tracePlugin/mysqlJdbc/mysqlJdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/traceWeb/traceWeb.iml" filepath="$PROJECT_DIR$/traceWeb/traceWeb.iml" />
     </modules>
   </component>

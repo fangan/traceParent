@@ -1,7 +1,6 @@
 package lljk.xtrace.dubboSupport.inteceptor;
 
 import com.alibaba.dubbo.rpc.Result;
-import com.alibaba.fastjson.JSONObject;
 import lljk.xtrace.traceContext.ThreadTraceContext;
 import lljk.xtrace.traceContext.TraceContext;
 import lljk.xtrace.traceFlush.TraceLog;
@@ -37,7 +36,6 @@ public class DubboConsumerAfterInteceptor {
 
         Result result = (Result)o;
         System.out.println(22);
-        System.out.println(JSONObject.toJSONString(result));
         System.out.println(11);
     }
 }

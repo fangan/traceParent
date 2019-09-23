@@ -38,25 +38,24 @@ public class DefaultTraceClassLoader extends URLClassLoader {
     @Override
     protected Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
         synchronized (getClassLoadingLock(name)) {
-            // First, check if the class has already been loaded
+
             Class clazz = findLoadedClass(name);
             if (clazz == null) {
                 if (agentJarClass.isAgentJarClass(name)) {
-                    // load a class used for Pinpoint itself by this ClassLoader
+
                     clazz = findClass(name);
                 } else {
                     try {
-                        // load a class by parent ClassLoader
+
                         if (parent != null) {
                             clazz = parent.loadClass(name);
                         } else {
-                            //c = findBootstrapClassOrNull(name);
-                            //clazz = this.bootLoader.findBootstrapClassOrNull(this, name);
+
                         }
                     } catch (ClassNotFoundException ignore) {
                     }
                     if (clazz == null) {
-                        // if not found, try to load a class by this ClassLoader
+
                         clazz = findClass(name);
                     }
                 }
