@@ -1,6 +1,7 @@
 package lljk.xtrace.dubboSupport.inteceptor;
 
 import com.alibaba.dubbo.rpc.Invocation;
+import com.alibaba.fastjson.JSON;
 import lljk.xtrace.traceContext.ThreadTraceContext;
 import lljk.xtrace.traceContext.TraceContext;
 import lljk.xtrace.traceFlush.TraceLog;
@@ -50,6 +51,8 @@ public class DubboConsumerBeforeInteceptor {
         Long spendTime = currentTime - t.getTime();
         traceLog.setTime(spendTime);
         t.setTime(currentTime);
+
+        System.out.println(JSON.toJSONString(traceLog));
 
         TraceLogWrite traceLogWrite = TraceLogWriteFactory.getTraceWrite(TraceWriteName.defaultWrite.name());
         traceLogWrite.write(traceLog);

@@ -7,6 +7,7 @@ import com.alibaba.dubbo.rpc.cluster.Directory;
 import com.alibaba.dubbo.rpc.cluster.LoadBalance;
 import com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -74,7 +75,11 @@ public class Test {
 
             @Override
             public Map<String, String> getAttachments() {
-                return null;
+                Map<String, String> attachment = new HashMap<>();
+                attachment.put("a","bbb");
+                return attachment;
+
+
             }
 
             @Override
@@ -84,6 +89,7 @@ public class Test {
 
             @Override
             public String getAttachment(String s, String s1) {
+
                 return null;
             }
 
