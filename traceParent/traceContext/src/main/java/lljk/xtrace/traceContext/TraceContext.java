@@ -8,6 +8,8 @@ package lljk.xtrace.traceContext;
 public class TraceContext {
     private String traceId;
 
+    private Thread currentThread;
+
     private String appName;
 
     private String prop;
@@ -54,5 +56,13 @@ public class TraceContext {
 
     public void setStep(Integer step) {
         this.step = step;
+    }
+
+    public Thread getCurrentThread() {
+        return currentThread;
+    }
+
+    public void setCurrentThread(Thread currentThread) {
+        this.currentThread = currentThread;
     }
 }

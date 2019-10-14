@@ -19,6 +19,7 @@ public class ThreadTraceContext {
         }else{
             TraceContext traceContext = new TraceContext();
             traceContext.setTraceId(UUID.randomUUID().toString());
+            traceContext.setCurrentThread(Thread.currentThread());
             traceContext.setAppName(AgentJvmParam.appName);
             traceContext.setTime(System.currentTimeMillis());
             traceContext.setStep(1);
