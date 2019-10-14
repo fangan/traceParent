@@ -44,7 +44,7 @@ public class DubboConsumerBeforeInteceptor {
         map.put(DubboLogParamTypeEnum.methodName.name(),methodName);
 
         TraceLog traceLog = new TraceLog();
-        traceLog.setLogType(TraceLogTypeEnum.beforeDubboConsume.name());
+        traceLog.setLogType(TraceLogTypeEnum.beforeDubboConsumer.name());
         traceLog.setAppName(t.getAppName());
         traceLog.setTraceId(t.getTraceId());
         traceLog.setParam(map);

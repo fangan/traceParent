@@ -1,6 +1,8 @@
 package lljk.xtrace.dubboSupport;
 
+import lljk.xtrace.dubboSupport.inteceptor.DubboConsumerAfterInteceptor;
 import lljk.xtrace.dubboSupport.inteceptor.DubboConsumerBeforeInteceptor;
+import lljk.xtrace.dubboSupport.inteceptor.DubboProviderAfterInteceptor;
 import lljk.xtrace.dubboSupport.inteceptor.DubboProviderBeforeInteceptor;
 import org.objectweb.asm.MethodVisitor;
 import org.objectweb.asm.Opcodes;
@@ -34,6 +36,19 @@ public class DubboProviderMethodVisitor extends MethodVisitor {
 
     @Override
     public void visitInsn(int opcode) {
+
+        if(opcode == LRETURN ||
+                opcode == DRETURN ||
+                opcode == FRETURN ||
+                opcode == IRETURN ||
+                opcode == ARETURN ||
+                opcode == RETURN ) {
+
+            mv.visitMethodInsn(INVOKESTATIC, DubboProviderAfterInteceptor.class.getName().replace(".","/"),"after","(Ljava/lang/Object;)V",false);
+
+        }
         super.visitInsn(opcode);
+
+
     }
 }

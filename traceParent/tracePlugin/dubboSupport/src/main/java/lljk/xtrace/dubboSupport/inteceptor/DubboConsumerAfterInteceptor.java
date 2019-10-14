@@ -20,7 +20,7 @@ public class DubboConsumerAfterInteceptor {
 
         TraceContext t = ThreadTraceContext.getThreadTraceContext();
         TraceLog traceLog = new TraceLog();
-        traceLog.setLogType(TraceLogTypeEnum.beforeDubboConsume.name());
+        traceLog.setLogType(TraceLogTypeEnum.beforeDubboConsumer.name());
         traceLog.setAppName(t.getAppName());
         traceLog.setTraceId(t.getTraceId());
         Long spendTime = currentMiles - t.getTime();

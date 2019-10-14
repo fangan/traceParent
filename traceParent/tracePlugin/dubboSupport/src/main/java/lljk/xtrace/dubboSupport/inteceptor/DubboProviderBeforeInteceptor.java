@@ -16,7 +16,10 @@ public class DubboProviderBeforeInteceptor {
     public static void before(Object o){
         Invocation invocation = (Invocation)o;
         Map<String, String> attachments = invocation.getAttachments();
-        String traceId = attachments.get(TraceIdProfile.traceIdName);
-        ThreadTraceContext.generateThreadTraceContext(traceId);
+        if(attachments != null){
+            String traceId = attachments.get(TraceIdProfile.traceIdName);
+            ThreadTraceContext.generateThreadTraceContext(traceId);
+        }
+
     }
 }

@@ -9,7 +9,9 @@ package lljk.xtrace.traceFlush.logType;
 public enum TraceLogTypeEnum {
 
 
-    beforeDubboConsume,
-    afterDubboConsume;
+    beforeDubboConsumer,
+    afterDubboConsumer,
+    beforeDubboProvider,
+    afterDubboProvider;
 
 }
