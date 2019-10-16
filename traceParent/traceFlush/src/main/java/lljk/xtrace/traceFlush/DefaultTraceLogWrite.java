@@ -21,4 +21,5 @@ public class DefaultTraceLogWrite implements TraceLogWrite{
         producer.send(new ProducerRecord<String, TraceLog>("x-trace-log", traceLog.getTraceId(), traceLog));
 
     }
+
 }

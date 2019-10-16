@@ -35,16 +35,9 @@ public class AgentJvmParam {
     }
 
     protected String findTraceAgentAppName(){
+        String jvmIndex = System.getProperty(AgentParamPattern.JAVA_AGENT_APP_NAME);
+        return jvmIndex;
 
-        RuntimeMXBean runtimeMXBean = ManagementFactory.getRuntimeMXBean();
-        List<String> inputArguments = runtimeMXBean.getInputArguments();
-        for (String inputArgument : inputArguments) {
-
-            if (isTraceAgentAppName(inputArgument, AgentParamPattern.DEFAULT_AGENT_PATTERN)) {
-                return removeJavaAgentPrefix(AgentParamPattern.JAVA_AGENT_APP_NAME_START,inputArgument);
-            }
-        }
-        return null;
     }
 
 
@@ -56,12 +49,7 @@ public class AgentJvmParam {
         return matcher.find();
     }
 
-    protected  boolean isTraceAgentAppName(String inputArgument, Pattern javaPattern) {
-        if (!inputArgument.startsWith(AgentParamPattern.JAVA_AGENT_APP_NAME_START)) {
-            return false;
-        }
-        return true;
-    }
+
 
 
     protected  String removeJavaAgentPrefix(String start,String inputArgument) {

@@ -1,6 +1,7 @@
 package lljk.xtrace.dubboSupport.inteceptor;
 
 import com.alibaba.dubbo.rpc.Result;
+import com.alibaba.fastjson.JSON;
 import lljk.xtrace.traceContext.ThreadTraceContext;
 import lljk.xtrace.traceContext.TraceContext;
 import lljk.xtrace.traceFlush.TraceLog;
@@ -16,6 +17,7 @@ import lljk.xtrace.traceFlush.logType.TraceLogTypeEnum;
  **/
 public class DubboConsumerAfterInteceptor {
     public static void after(Object o){
+
         Long currentMiles = System.currentTimeMillis();
 
         TraceContext t = ThreadTraceContext.getThreadTraceContext();
@@ -35,7 +37,6 @@ public class DubboConsumerAfterInteceptor {
 
 
         Result result = (Result)o;
-        System.out.println(22);
-        System.out.println(11);
+
     }
 }

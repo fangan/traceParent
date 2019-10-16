@@ -25,7 +25,8 @@ public class DubboConsumerMethodVisitor extends MethodVisitor {
     @Override
     public void visitCode() {
         mv.visitVarInsn(Opcodes.ALOAD,1);
-        mv.visitMethodInsn(INVOKESTATIC, DubboConsumerBeforeInteceptor.class.getName().replace(".","/"),"before","(Ljava/lang/Object;)V",false);
+        mv.visitVarInsn(Opcodes.ALOAD,0);
+        mv.visitMethodInsn(INVOKESTATIC, DubboConsumerBeforeInteceptor.class.getName().replace(".","/"),"before","(Ljava/lang/Object;Ljava/lang/Object;)V",false);
 
         super.visitCode();
     }
@@ -39,10 +40,10 @@ public class DubboConsumerMethodVisitor extends MethodVisitor {
                 opcode == ARETURN ||
                 opcode == RETURN ) {
 
-            mv.visitVarInsn(Opcodes.ASTORE,5);
-            mv.visitVarInsn(Opcodes.ALOAD,5);
+            mv.visitVarInsn(Opcodes.ASTORE,3);
+            mv.visitVarInsn(Opcodes.ALOAD,3);
             mv.visitMethodInsn(INVOKESTATIC, DubboConsumerAfterInteceptor.class.getName().replace(".","/"),"after","(Ljava/lang/Object;)V",false);
-            mv.visitVarInsn(Opcodes.ALOAD,5);
+            mv.visitVarInsn(Opcodes.ALOAD,3);
 
 //            mv.visitVarInsn(Opcodes.ALOAD,1);
 //            mv.visitMethodInsn(INVOKESTATIC, DubboConsumerAfterInteceptor.class.getName().replace(".","/"),"after","(Ljava/lang/Object;)V",false);

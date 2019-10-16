@@ -2,6 +2,7 @@ package lljk.xtrace.traceContext;
 
 import lljk.xtrace.traceOption.param.AgentJvmParam;
 
+import java.util.Stack;
 import java.util.UUID;
 
 /**
@@ -22,6 +23,8 @@ public class ThreadTraceContext {
             traceContext.setCurrentThread(Thread.currentThread());
             traceContext.setAppName(AgentJvmParam.appName);
             traceContext.setTime(System.currentTimeMillis());
+            Stack spendTimeStack = new Stack();
+            spendTimeStack.push(traceContext.getTime());
             traceContext.setStep(1);
             TraceMap.contextMap.set(traceContext);
             return traceContext;

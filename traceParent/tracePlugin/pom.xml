@@ -9,12 +9,26 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <properties>
+        <alibaba.fastjson>1.2.56</alibaba.fastjson>
+    </properties>
+
     <artifactId>tracePlugin</artifactId>
     <packaging>pom</packaging>
     <modules>
         <module>dubboSupport</module>
         <module>mysqlJdbc</module>
     </modules>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${alibaba.fastjson}</version>
+        </dependency>
+
+    </dependencies>
 
 
 </project>

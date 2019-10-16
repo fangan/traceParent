@@ -1,5 +1,7 @@
 package lljk.xtrace.traceContext;
 
+import java.util.Stack;
+
 /**
  * @Description TODO
  * @Date 2019/3/14 下午12:55
@@ -17,6 +19,8 @@ public class TraceContext {
     private Long time;
 
     private Integer step;
+
+    private Stack spendTimeStack;
 
     public String getTraceId() {
         return traceId;
@@ -64,5 +68,13 @@ public class TraceContext {
 
     public void setCurrentThread(Thread currentThread) {
         this.currentThread = currentThread;
+    }
+
+    public Stack getSpendTimeStack() {
+        return spendTimeStack;
+    }
+
+    public void setSpendTimeStack(Stack spendTimeStack) {
+        this.spendTimeStack = spendTimeStack;
     }
 }

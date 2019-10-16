@@ -1,6 +1,7 @@
 package lljk.xtrace.dubboSupport.inteceptor;
 
 import com.alibaba.dubbo.rpc.Invocation;
+import com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker;
 import com.alibaba.fastjson.JSON;
 import lljk.xtrace.traceContext.ThreadTraceContext;
 import lljk.xtrace.traceContext.TraceContext;
@@ -21,12 +22,14 @@ import java.util.Map;
  * @Author fangan
  **/
 public class DubboConsumerBeforeInteceptor {
-    public static void before(Object param){
+    public static void before(Object param,Object paramb){
         Long currentTime = System.currentTimeMillis();
 
         TraceContext t = ThreadTraceContext.getThreadTraceContext();
-        t.setTime(System.currentTimeMillis());
         Invocation invocation = (Invocation) param;
+
+        AbstractClusterInvoker abstractClusterInvoker = (AbstractClusterInvoker)paramb;
+
         Map<String, String> attachment =  invocation.getAttachments();
         attachment.put(TraceIdProfile.traceIdName,t.getTraceId());
 
@@ -34,8 +37,7 @@ public class DubboConsumerBeforeInteceptor {
 
         Object[] arguments = invocation.getArguments();
         Class<?>[] parameterTypes = invocation.getParameterTypes();
-        Class clazz = invocation.getInvoker().getInterface();
-        String interfaceName = clazz.getName();
+        String interfaceName = abstractClusterInvoker.getInterface().getName();
         String methodName = invocation.getMethodName();
 
         map.put(DubboLogParamTypeEnum.arguments.name(),arguments);
@@ -51,8 +53,6 @@ public class DubboConsumerBeforeInteceptor {
         Long spendTime = currentTime - t.getTime();
         traceLog.setTime(spendTime);
         t.setTime(currentTime);
-
-        System.out.println(JSON.toJSONString(traceLog));
 
         TraceLogWrite traceLogWrite = TraceLogWriteFactory.getTraceWrite(TraceWriteName.defaultWrite.name());
         traceLogWrite.write(traceLog);

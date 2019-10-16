@@ -11,7 +11,7 @@ public class AgentParamPattern {
 
     static final String JAVA_AGENT_VM_PARAM_START = "-javaagent:";
 
-    static final String JAVA_AGENT_APP_NAME_START = "-agentappname:";
+    static final String JAVA_AGENT_APP_NAME = "lljkagentappname";
 
     static final Pattern DEFAULT_AGENT_PATTERN = compile("traceAgent-1.0-SNAPSHOT"+"\\.jar");
 

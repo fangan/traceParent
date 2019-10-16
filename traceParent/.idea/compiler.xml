@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dubboSupport" />
+        <module name="mysqlJdbc" />
         <module name="traceAgent" />
         <module name="traceContext" />
         <module name="traceFlush" />
@@ -16,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="mysqlJdbc" target="1.5" />
       <module name="traceWeb" target="1.5" />
     </bytecodeTargetLevel>
   </component>

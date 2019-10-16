@@ -44,7 +44,7 @@ public class DubboProviderMethodVisitor extends MethodVisitor {
                 opcode == ARETURN ||
                 opcode == RETURN ) {
 
-            mv.visitMethodInsn(INVOKESTATIC, DubboProviderAfterInteceptor.class.getName().replace(".","/"),"after","(Ljava/lang/Object;)V",false);
+            mv.visitMethodInsn(INVOKESTATIC, DubboProviderAfterInteceptor.class.getName().replace(".","/"),"after","()V",false);
 
         }
         super.visitInsn(opcode);
