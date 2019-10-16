@@ -24,21 +24,10 @@ public class DubboProviderAfterInteceptor {
         traceLog.setLogType(TraceLogTypeEnum.afterDubboProvider.name());
         traceLog.setAppName(t.getAppName());
         traceLog.setTraceId(t.getTraceId());
-        Long spendTime = currentMiles - t.getTime();
-
-        traceLog.setTime(spendTime);
-
-        t.setTime(System.currentTimeMillis());
-
+        traceLog.setTime(currentMiles);
 
         TraceLogWrite traceLogWrite = TraceLogWriteFactory.getTraceWrite(TraceWriteName.defaultWrite.name());
         traceLogWrite.write(traceLog);
-
-
-
-        System.out.println(22);
-        System.out.println(11);
-
 
     }
 }

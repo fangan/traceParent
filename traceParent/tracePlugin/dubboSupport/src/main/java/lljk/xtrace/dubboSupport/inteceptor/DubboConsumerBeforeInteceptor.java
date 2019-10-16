@@ -50,9 +50,7 @@ public class DubboConsumerBeforeInteceptor {
         traceLog.setAppName(t.getAppName());
         traceLog.setTraceId(t.getTraceId());
         traceLog.setParam(map);
-        Long spendTime = currentTime - t.getTime();
-        traceLog.setTime(spendTime);
-        t.setTime(currentTime);
+        traceLog.setTime(currentTime);
 
         TraceLogWrite traceLogWrite = TraceLogWriteFactory.getTraceWrite(TraceWriteName.defaultWrite.name());
         traceLogWrite.write(traceLog);

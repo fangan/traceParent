@@ -22,14 +22,12 @@ public class DubboConsumerAfterInteceptor {
 
         TraceContext t = ThreadTraceContext.getThreadTraceContext();
         TraceLog traceLog = new TraceLog();
-        traceLog.setLogType(TraceLogTypeEnum.beforeDubboConsumer.name());
+        traceLog.setLogType(TraceLogTypeEnum.afterDubboConsumer.name());
         traceLog.setAppName(t.getAppName());
         traceLog.setTraceId(t.getTraceId());
-        Long spendTime = currentMiles - t.getTime();
 
-        traceLog.setTime(spendTime);
+        traceLog.setTime(currentMiles);
 
-        t.setTime(System.currentTimeMillis());
 
 
         TraceLogWrite traceLogWrite = TraceLogWriteFactory.getTraceWrite(TraceWriteName.defaultWrite.name());
