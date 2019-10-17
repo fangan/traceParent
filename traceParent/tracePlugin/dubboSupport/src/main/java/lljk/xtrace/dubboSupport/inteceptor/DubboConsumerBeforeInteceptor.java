@@ -1,6 +1,7 @@
 package lljk.xtrace.dubboSupport.inteceptor;
 
 import com.alibaba.dubbo.rpc.Invocation;
+import com.alibaba.dubbo.rpc.Invoker;
 import com.alibaba.dubbo.rpc.cluster.support.AbstractClusterInvoker;
 import com.alibaba.fastjson.JSON;
 import lljk.xtrace.traceContext.ThreadTraceContext;
@@ -22,13 +23,15 @@ import java.util.Map;
  * @Author fangan
  **/
 public class DubboConsumerBeforeInteceptor {
-    public static void before(Object param,Object paramb){
+    public static void before(Invoker invoker, Invocation invocation){
+        Invoker b = invoker;
+        System.out.println(b.getClass().getClassLoader());
+        System.out.println(invoker.getClass().getClassLoader());
+        System.out.println(invocation.getClass().getClassLoader());
         Long currentTime = System.currentTimeMillis();
 
         TraceContext t = ThreadTraceContext.getThreadTraceContext();
-        Invocation invocation = (Invocation) param;
 
-        AbstractClusterInvoker abstractClusterInvoker = (AbstractClusterInvoker)paramb;
 
         Map<String, String> attachment =  invocation.getAttachments();
         attachment.put(TraceIdProfile.traceIdName,t.getTraceId());
@@ -37,7 +40,7 @@ public class DubboConsumerBeforeInteceptor {
 
         Object[] arguments = invocation.getArguments();
         Class<?>[] parameterTypes = invocation.getParameterTypes();
-        String interfaceName = abstractClusterInvoker.getInterface().getName();
+        String interfaceName = invoker.getInterface().getName();
         String methodName = invocation.getMethodName();
 
         map.put(DubboLogParamTypeEnum.arguments.name(),arguments);

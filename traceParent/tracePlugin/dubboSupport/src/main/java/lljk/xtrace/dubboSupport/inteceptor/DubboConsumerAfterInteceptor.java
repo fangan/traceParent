@@ -16,7 +16,7 @@ import lljk.xtrace.traceFlush.logType.TraceLogTypeEnum;
  * @Author fangan
  **/
 public class DubboConsumerAfterInteceptor {
-    public static void after(Object o){
+    public static void after(){
 
         Long currentMiles = System.currentTimeMillis();
 
@@ -28,13 +28,8 @@ public class DubboConsumerAfterInteceptor {
 
         traceLog.setTime(currentMiles);
 
-
-
         TraceLogWrite traceLogWrite = TraceLogWriteFactory.getTraceWrite(TraceWriteName.defaultWrite.name());
         traceLogWrite.write(traceLog);
-
-
-        Result result = (Result)o;
 
     }
 }

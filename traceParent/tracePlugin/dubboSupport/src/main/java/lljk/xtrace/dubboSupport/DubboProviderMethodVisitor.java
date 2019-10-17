@@ -29,7 +29,7 @@ public class DubboProviderMethodVisitor extends MethodVisitor {
     public void visitCode() {
 
         mv.visitVarInsn(Opcodes.ALOAD,1);
-        mv.visitMethodInsn(INVOKESTATIC, DubboProviderBeforeInteceptor.class.getName().replace(".","/"),"before","(Ljava/lang/Object;)V",false);
+        mv.visitMethodInsn(INVOKESTATIC, DubboProviderBeforeInteceptor.class.getName().replace(".","/"),"before","(Lcom/alibaba/dubbo/rpc/Invocation;)V",false);
 
         super.visitCode();
     }

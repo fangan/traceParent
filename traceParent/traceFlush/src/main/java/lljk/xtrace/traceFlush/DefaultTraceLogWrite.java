@@ -18,6 +18,9 @@ public class DefaultTraceLogWrite implements TraceLogWrite{
     public void write(TraceLog traceLog) {
         System.out.println(JSON.toJSONString(traceLog));
 
+        Class clazz = TraceKafkaProducer.class.getClass();
+        System.out.println(clazz);
+
 //        Producer<String,TraceLog> producer = TraceKafkaProducer.getKafkaProducer();
 //
 //        producer.send(new ProducerRecord<String, TraceLog>("x-trace-log", traceLog.getTraceId(), traceLog));

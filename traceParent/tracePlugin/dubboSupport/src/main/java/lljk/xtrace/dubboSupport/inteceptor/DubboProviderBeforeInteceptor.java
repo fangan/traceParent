@@ -19,8 +19,8 @@ import java.util.Map;
  * @Author fangan
  **/
 public class DubboProviderBeforeInteceptor {
-    public static void before(Object o){
-        Invocation invocation = (Invocation)o;
+    public static void before(Invocation invocation){
+
         Map<String, String> attachments = invocation.getAttachments();
         if(attachments != null){
             String traceId = attachments.get(TraceIdProfile.traceIdName);
