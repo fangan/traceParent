@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <properties>
-        <alibaba.fastjson>1.2.56</alibaba.fastjson>
+        <alibaba.fastjson>1.2.83</alibaba.fastjson>
     </properties>
 
     <artifactId>tracePlugin</artifactId>

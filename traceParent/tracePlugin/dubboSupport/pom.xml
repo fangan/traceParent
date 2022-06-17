@@ -12,7 +12,7 @@
 
     <properties>
         <dubbo.version>2.5.5</dubbo.version>
-        <alibaba.fastjson>1.2.56</alibaba.fastjson>
+        <alibaba.fastjson>1.2.83</alibaba.fastjson>
     </properties>
 
     <dependencies>
